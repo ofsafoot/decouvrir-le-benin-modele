@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Galerie photo du Bénin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une galerie photo interactive, utilisable à la souris et au clavier.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/benin.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+  <script src="assets/js/galerie.js"></script>
+</head>
+
+<body class="is-preload" onload="addTabFocus()">
+  <a href="#main" class="skip">Passer au contenu principal</a>
+
+  <div id="wrapper">
+    <header id="header">
+      <a href="index.html" class="logo">Bénin</a>
+    </header>
+
+    <nav id="nav" aria-label="Menu principal">
+      <ul class="links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="patrimoine.html">Patrimoine</a></li>
+        <li><a href="nature.html">Nature</a></li>
+        <li class="active"><a href="galerie.html" aria-current="page">Galerie</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="https://github.com/ofsafoot/decouvrir-le-benin-modele" class="icon brands fa-github"
+            aria-label="Code source sur GitHub"><span class="label">GitHub</span></a></li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <section class="post">
+        <header class="major">
+          <span class="date">Galerie</span>
+          <h1>Galerie<br>
+            photo</h1>
+          <p>Passez la souris sur une photo, ou utilisez la touche Tab pour aller d'une photo à l'autre.</p>
+        </header>
+
+        <div id="image" aria-live="polite">Survolez une photo ci-dessous pour l'afficher ici.</div>
+
+        <div class="miniatures">
+          <img class="preview" src="images/dantokpa.jpg" width="960" height="720" alt="Une avenue de Cotonou près du marché Dantokpa"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+          <img class="preview" src="images/mosquee-porto-novo.jpg" width="960" height="720" alt="La grande mosquée de Porto-Novo"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+          <img class="preview" src="images/porte-non-retour.jpg" width="960" height="540" alt="La Porte du Non-Retour à Ouidah"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+          <img class="preview" src="images/temple-pythons.jpg" width="960" height="746" alt="Le Temple des Pythons à Ouidah"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+          <img class="preview" src="images/abomey.jpg" width="960" height="720" alt="Les palais royaux d'Abomey"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+          <img class="preview" src="images/ganvie.jpg" width="960" height="505" alt="Le village de Ganvié sur le lac Nokoué"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+          <img class="preview" src="images/pendjari.jpg" width="960" height="541" alt="Des éléphants dans la Pendjari"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+          <img class="preview" src="images/kota.jpg" width="960" height="640" alt="Les chutes de Kota"
+            onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        </div>
+
+        <h2 id="credits">Crédits photos</h2>
+        <p>Toutes les photos viennent de <a href="https://commons.wikimedia.org/">Wikimedia Commons</a> :</p>
+        <ul class="credits">
+          <li><a href="https://commons.wikimedia.org/wiki/File:March%C3%A9_Dantokpa_1.jpg">Marché Dantokpa</a>, Alacoolwiki, <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC BY 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Porto-Novo_au_B%C3%A9nin_01.jpg">Grande mosquée de Porto-Novo</a>, Gildaskiki, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Porte_du_non-retour_au_Benin.jpg">Porte du Non-Retour</a>, Borisghost, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_du_Temple_des_Pythons_%28Ouidah%29.jpg">Temple des Pythons</a>, Ji-Elle, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Royal_Palaces_of_Abomey-133470.jpg">Palais royaux d'Abomey</a>, Karalyn Monteil, <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.fr">CC BY-SA 3.0 IGO</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:The_village_of_Ganvi%C3%A9_on_Lake_Nokou%C3%A9.jpg">Village de Ganvié (aussi en fond de page)</a>, Ondřej Havelka, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Ganvie2.jpg">Cases de Ganvié</a>, Manu25, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Elephants_Pendjari_National_Park.jpg">Éléphants de la Pendjari</a>, Marc Auer, <a href="https://creativecommons.org/licenses/by/2.0/deed.fr">CC BY 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Chutes_de_Kota_%281%29.jpg">Chutes de Kota</a>, Ji-Elle, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Bouche_du_Roi_in_Grand_Popo_Benin.jpg">Bouche du Roy</a>, Kulttuurinavigaattori, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <section id="footer" aria-label="À propos du site">
+      <section>
+        <h2>À propos</h2>
+        <p>Ce site présente le Bénin, mon pays : son histoire, sa nature et ses paysages. Je l'ai réalisé pour le
+          projet de synthèse de la spécialisation Web Design for Everybody, à partir du modèle Massively.</p>
+      </section>
+      <section>
+        <h2>Pages et crédits</h2>
+        <p><a href="patrimoine.html">Histoire et patrimoine</a><br>
+          <a href="nature.html">Nature et paysages</a><br>
+          <a href="galerie.html">Galerie photo</a></p>
+        <p>Photos : Wikimedia Commons, sous licences libres.
+          <a href="galerie.html#credits">Voir les crédits</a></p>
+      </section>
+    </section>
+
+    <footer id="copyright">
+      <ul>
+        <li>&copy; 2026 Emmanuel Kakpo</li>
+        <li>Design : <a href="https://html5up.net/massively">Massively par HTML5 UP</a> (licence CC BY 3.0)</li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

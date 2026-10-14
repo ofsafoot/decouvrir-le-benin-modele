@@ -117,11 +117,16 @@
 			}, 100);
 		});
 
+	// Reduced motion.
+		var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 	// Scrolly.
-		$('.scrolly').scrolly();
+		$('.scrolly').scrolly({
+			speed: (reduceMotion ? 0 : 1000)
+		});
 
 	// Background.
-		$wrapper._parallax(0.925);
+		$wrapper._parallax(reduceMotion ? 0 : 0.925);
 
 	// Nav Panel.
 
@@ -129,7 +134,7 @@
 			$navPanelToggle = $(
 				'<a href="#navPanel" id="navPanelToggle">Menu</a>'
 			)
-				.appendTo($wrapper);
+				.appendTo($header);
 
 			// Change toggle styling once we've scrolled past the header.
 				$header.scrollex({
@@ -147,7 +152,7 @@
 				'<div id="navPanel">' +
 					'<nav>' +
 					'</nav>' +
-					'<a href="#navPanel" class="close"></a>' +
+					'<a href="#navPanel" class="close" aria-label="Fermer le menu"></a>' +
 				'</div>'
 			)
 				.appendTo($body)
