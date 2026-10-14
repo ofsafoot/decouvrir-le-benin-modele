@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Découvrir le Bénin : présentation du site</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 15mm;
+    }
+
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #222222;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 11pt;
+      line-height: 1.5;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #212931;
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 24pt;
+    }
+
+    h2 {
+      margin-top: 28px;
+      padding-bottom: 4px;
+      border-bottom: 3px solid #18bfef;
+      font-size: 16pt;
+      break-after: avoid;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 12.5pt;
+      break-after: avoid;
+    }
+
+    a {
+      color: #0b6c8c;
+    }
+
+    .liens {
+      padding: 10px 14px;
+      background-color: #f2f6f8;
+      border-left: 5px solid #18bfef;
+    }
+
+    .liens p {
+      margin: 3px 0;
+    }
+
+    figure {
+      margin: 10px 0 16px;
+      break-inside: avoid;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #cccccc;
+    }
+
+    figure.etroit img {
+      width: 45%;
+      margin: 0 auto;
+    }
+
+    figure.mobile img {
+      width: 30%;
+      margin: 0 auto;
+    }
+
+    .duo {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .duo figure {
+      flex: 1;
+    }
+
+    .duo figure.petit {
+      flex: 0 0 24%;
+    }
+
+    figcaption {
+      margin-top: 4px;
+      color: #555555;
+      font-size: 9.5pt;
+      font-style: italic;
+      text-align: center;
+    }
+
+    pre {
+      margin: 8px 0 14px;
+      padding: 10px 12px;
+      background-color: #f6f6f6;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      font-size: 8.5pt;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+
+    table {
+      width: 100%;
+      margin: 8px 0 14px;
+      border-collapse: collapse;
+      font-size: 10pt;
+    }
+
+    th,
+    td {
+      padding: 5px 8px;
+      border: 1px solid #cccccc;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f2f6f8;
+    }
+
+    @media print {
+      body {
+        max-width: none;
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .duo {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Découvrir le Bénin</h1>
+    <p>Projet de synthèse Web Design for Everybody · Emmanuel Kakpo · site réalisé à partir d'un modèle</p>
+
+    <div class="liens">
+      <p><strong>Site en ligne :</strong> <a href="https://ofsafoot.github.io/decouvrir-le-benin-modele/">https://ofsafoot.github.io/decouvrir-le-benin-modele/</a></p>
+      <p><strong>Code source :</strong> <a href="https://github.com/ofsafoot/decouvrir-le-benin-modele">https://github.com/ofsafoot/decouvrir-le-benin-modele</a></p>
+      <p><strong>Historique des modifications :</strong> <a href="https://github.com/ofsafoot/decouvrir-le-benin-modele/commits/main">le premier commit contient le modèle d'origine, sans modification</a></p>
+      <p><strong>Modèle de départ :</strong> <a href="https://html5up.net/massively">Massively, par HTML5 UP</a> (licence Creative Commons BY 3.0)</p>
+      <p><strong>Version PDF :</strong> <a href="decouvrir-le-benin-modele.pdf">télécharger ce document</a></p>
+    </div>
+
+    <h2>1. Le projet</h2>
+    <p>« Découvrir le Bénin » présente mon pays en quatre pages : l'accueil, Histoire et patrimoine, Nature et
+      paysages, et une galerie photo. J'ai construit le site à partir du modèle gratuit Massively. J'ai d'abord publié
+      le modèle sans rien changer pour le tester avec les validateurs, puis je l'ai adapté et corrigé. Les deux étapes
+      sont visibles dans l'historique Git.</p>
+    <figure>
+      <img src="img/accueil-avant-apres.jpg" width="2260" height="700"
+        alt="À gauche la page d'accueil du modèle Massively d'origine, à droite la page d'accueil de mon site sur le Bénin">
+      <figcaption>Page d'accueil : le modèle d'origine (à gauche) et mon site (à droite).</figcaption>
+    </figure>
+
+    <h2>2. Ce que j'ai changé par rapport au modèle</h2>
+    <table>
+      <tr>
+        <th>Partie</th>
+        <th>Modèle d'origine</th>
+        <th>Mon site</th>
+      </tr>
+      <tr>
+        <td>Contenu</td>
+        <td>Textes « lorem ipsum » en anglais, fausses dates</td>
+        <td>Tous les textes réécrits en français sur le Bénin ; les fausses dates sont devenues des catégories
+          (Histoire, Nature)</td>
+      </tr>
+      <tr>
+        <td>Pages</td>
+        <td>index, generic, elements</td>
+        <td>index, patrimoine, nature, galerie ; les pages generic et elements sont supprimées</td>
+      </tr>
+      <tr>
+        <td>Images</td>
+        <td>9 photos de démonstration</td>
+        <td>10 photos du Bénin de Wikimedia Commons, créditées sur la page Galerie ; nouveau fond (Ganvié) avec un voile
+          plus sombre pour que le titre reste lisible</td>
+      </tr>
+      <tr>
+        <td>Navigation</td>
+        <td>Liens de démonstration et 4 icônes de réseaux sociaux vides (<code>href="#"</code>)</td>
+        <td>4 liens en français avec <code>aria-current</code> ; une seule icône, qui mène au vrai code sur GitHub</td>
+      </tr>
+      <tr>
+        <td>Accueil</td>
+        <td>Article à la une, 6 articles, pagination factice</td>
+        <td>Article de bienvenue, 6 cartes de lieux avec un bouton chacune, pagination supprimée</td>
+      </tr>
+      <tr>
+        <td>Pied de page</td>
+        <td>Formulaire de contact sans traitement, fausse adresse</td>
+        <td>Formulaire retiré (GitHub Pages ne peut pas envoyer de messages) ; sections « À propos » et « Pages et
+          crédits » ; le crédit HTML5 UP est gardé, comme l'exige la licence</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td><code>main.css</code></td>
+        <td><code>main.css</code> presque intact (une ligne invalide supprimée) ; tous mes styles sont dans
+          <code>assets/css/benin.css</code>, chargé après</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td><code>main.js</code></td>
+        <td>3 changements dans <code>main.js</code> (voir plus bas) et un nouveau fichier <code>galerie.js</code></td>
+      </tr>
+    </table>
+
+    <h2>3. Les problèmes d'accessibilité rencontrés</h2>
+    <p>Avant de modifier quoi que ce soit, j'ai passé le modèle dans WAVE, dans le validateur du W3C et dans axe.
+      WAVE trouvait 9 erreurs, 15 erreurs de contraste et 11 alertes, pour un score AIM de 4,7 sur 10.</p>
+    <div class="duo">
+      <figure class="petit">
+        <img src="img/wave-avant.jpg" width="380" height="1000"
+          alt="WAVE sur le modèle d'origine : 9 erreurs, 15 erreurs de contraste, 11 alertes, score AIM 4,7">
+        <figcaption>Avant : le modèle d'origine dans WAVE.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/w3c-avant.jpg" width="1100" height="820"
+          alt="Validateur W3C sur la page generic du modèle d'origine : liste d'avertissements et une erreur">
+        <figcaption>Avant : le validateur W3C sur la page generic du modèle (l'erreur de titre est plus bas dans la
+          liste).</figcaption>
+      </figure>
+    </div>
+
+    <table>
+      <tr>
+        <th>Problème trouvé</th>
+        <th>Outil</th>
+        <th>Ma correction</th>
+      </tr>
+      <tr>
+        <td>7 images servant de lien sans texte alternatif</td>
+        <td>WAVE (erreurs)</td>
+        <td>Chaque photo a un <code>alt</code> qui la décrit ; les photos ne sont plus des liens, c'est le bouton qui
+          mène à la page</td>
+      </tr>
+      <tr>
+        <td>Liens vides : icônes de réseaux sociaux, bouton qui ferme le menu mobile</td>
+        <td>WAVE, axe</td>
+        <td>Icônes factices supprimées ; <code>aria-label</code> sur l'icône GitHub et sur le bouton de fermeture
+          (dans <code>main.js</code>)</td>
+      </tr>
+      <tr>
+        <td>Langue de la page non déclarée</td>
+        <td>WAVE, W3C, axe</td>
+        <td><code>&lt;html lang="fr"&gt;</code></td>
+      </tr>
+      <tr>
+        <td>Zoom bloqué sur mobile (<code>user-scalable=no</code>)</td>
+        <td>W3C, axe</td>
+        <td>Retiré de la balise <code>viewport</code></td>
+      </tr>
+      <tr>
+        <td>Texte gris du pied de page : 4,05:1 pour les titres et étiquettes, moins pour le texte courant</td>
+        <td>WAVE (15 erreurs de contraste), axe</td>
+        <td>Gris plus foncés dans <code>benin.css</code> : <code>#3c4248</code> et <code>#2e3338</code> sur
+          <code>#f5f5f5</code></td>
+      </tr>
+      <tr>
+        <td>Copyright gris sur fond sombre : 2,28:1</td>
+        <td>axe</td>
+        <td>Texte éclairci en <code>#c3c8cd</code></td>
+      </tr>
+      <tr>
+        <td>Saut de niveau de titre (h1 puis h3)</td>
+        <td>W3C (erreur), axe</td>
+        <td>Titres dans l'ordre : un h1 par page, puis des h2</td>
+      </tr>
+      <tr>
+        <td>Contenu hors des zones repères, deux pieds de page</td>
+        <td>axe</td>
+        <td><code>&lt;main&gt;</code>, une introduction étiquetée, un seul <code>&lt;footer&gt;</code> ; le bouton
+          « Menu » est rattaché à l'en-tête</td>
+      </tr>
+      <tr>
+        <td>Texte justifié, difficile à lire pour certaines personnes</td>
+        <td>WAVE (alertes)</td>
+        <td><code>p { text-align: inherit; }</code> : aligné à gauche, centré seulement dans les en-têtes</td>
+      </tr>
+      <tr>
+        <td>Pas de lien pour passer au contenu</td>
+        <td>Vérification au clavier</td>
+        <td>Lien « Passer au contenu principal », visible au focus</td>
+      </tr>
+      <tr>
+        <td>Parallaxe et animations même quand l'utilisateur demande moins de mouvement</td>
+        <td>Test du réglage « réduire les animations »</td>
+        <td>Désactivés dans <code>main.js</code> et <code>benin.css</code> (extra 4)</td>
+      </tr>
+      <tr>
+        <td><code>height: 1;</code> sans unité dans <code>main.css</code></td>
+        <td>W3C CSS (1 erreur)</td>
+        <td>Ligne supprimée (les navigateurs l'ignoraient déjà)</td>
+      </tr>
+    </table>
+    <p>Après les corrections, WAVE ne trouve plus aucune erreur ni erreur de contraste sur les quatre pages, avec un
+      score AIM de 10 sur 10. Il reste une seule alerte par page : la balise <code>&lt;noscript&gt;</code> du modèle.
+      Je l'ai gardée volontairement : elle charge une feuille de style de secours qui affiche le fond et l'introduction
+      quand JavaScript est désactivé. Sans elle, ces visiteurs verraient une page en partie vide.</p>
+    <figure>
+      <img src="img/wave-apres.jpg" width="1560" height="560"
+        alt="Résumés WAVE de mes quatre pages : 0 erreur, 0 erreur de contraste, 1 alerte, score AIM 10">
+      <figcaption>Après : WAVE sur Accueil, Patrimoine, Nature et Galerie.</figcaption>
+    </figure>
+
+    <h2>4. Validation W3C</h2>
+    <p>Les quatre pages passent le validateur HTML du W3C sans erreur ni avertissement. Sur le modèle d'origine,
+      l'accueil donnait 31 messages et la page generic une erreur.</p>
+    <figure>
+      <img src="img/w3c-apres.jpg" width="2140" height="660"
+        alt="Quatre résultats du validateur W3C : No errors or warnings to show">
+      <figcaption>Accueil, Patrimoine, Nature et Galerie : « No errors or warnings to show ».</figcaption>
+    </figure>
+    <p>Les deux feuilles de style passent le validateur CSS. Pour <code>main.css</code>, il reste 285
+      avertissements : ce sont les préfixes navigateur du modèle (<code>-webkit-</code>, <code>-moz-</code>,
+      <code>-ms-</code>), qui ne sont pas des erreurs. <code>benin.css</code> n'a ni erreur ni avertissement.</p>
+    <figure>
+      <img src="img/css-apres.jpg" width="2140" height="330"
+        alt="Validateur CSS du W3C : aucune erreur trouvée pour main.css et pour benin.css">
+      <figcaption>main.css (à gauche) et benin.css (à droite) : « Félicitations ! Aucune erreur trouvée. »</figcaption>
+    </figure>
+
+    <h2>5. Un site réactif</h2>
+    <p>Massively est déjà réactif : il utilise des media queries et un menu latéral sur les petits écrans. J'ai vérifié
+      que mes ajouts suivent le même comportement. Par exemple, les miniatures de la galerie passent de 2 colonnes sur
+      mobile à 4 colonnes à partir de 737 px.</p>
+    <figure>
+      <img src="img/responsive-accueil.jpg" width="2360" height="800" alt="La page d'accueil sur mobile, tablette et grand écran">
+      <figcaption>Accueil sur mobile (400 px), tablette (800 px) et grand écran (1280 px).</figcaption>
+    </figure>
+    <div class="duo">
+      <figure>
+        <img src="img/responsive-patrimoine.jpg" width="1444" height="800" alt="La page Patrimoine sur mobile et sur grand écran">
+        <figcaption>Page Patrimoine sur mobile et sur grand écran.</figcaption>
+      </figure>
+      <figure class="petit">
+        <img src="img/menu.jpg" width="400" height="800" alt="Le menu latéral ouvert sur téléphone">
+        <figcaption>Menu ouvert sur téléphone.</figcaption>
+      </figure>
+    </div>
+
+    <h2>6. Mes quatre extras</h2>
+
+    <h3>Extra 1 : une galerie photo interactive en JavaScript</h3>
+    <p>Sur la page Galerie, une photo s'affiche en grand avec son texte alternatif quand on passe la souris sur une
+      miniature. Au clavier, une boucle ajoute <code>tabindex="0"</code> à chaque miniature au chargement de la page,
+      puis <code>onfocus</code> et <code>onblur</code> appellent les mêmes fonctions que la souris.</p>
+    <pre>function upDate(previewPic) {
+  let image = document.getElementById("image");
+  image.innerHTML = previewPic.alt;
+  image.style.backgroundImage = "url('" + previewPic.src + "')";
+}
+
+function addTabFocus() {
+  console.log("Page chargée : ajout de tabindex sur les photos");
+
+  let photos = document.querySelectorAll(".preview");
+  for (let i = 0; i &lt; photos.length; i++) {
+    photos[i].setAttribute("tabindex", "0");
+  }
+}</pre>
+    <figure>
+      <img src="img/galerie.jpg" width="1280" height="760"
+        alt="La galerie avec la photo des éléphants affichée en grand et la miniature correspondante entourée">
+      <figcaption>La 7e miniature a reçu le focus avec la touche Tab : la photo s'affiche en grand.</figcaption>
+    </figure>
+
+    <h3>Extra 2 : une carte OpenStreetMap intégrée</h3>
+    <p>La page Nature se termine par une carte interactive qui situe le Bénin, avec un marqueur au centre du pays.
+      L'<code>iframe</code> a un titre pour les lecteurs d'écran, et elle ne se charge que lorsqu'on approche de la
+      carte (<code>loading="lazy"</code>).</p>
+    <pre>&lt;iframe title="Carte du Bénin sur OpenStreetMap" loading="lazy"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=0.6%2C6.0%2C4.0%2C12.5&amp;amp;layer=mapnik&amp;amp;marker=9.3%2C2.3"&gt;&lt;/iframe&gt;</pre>
+    <figure>
+      <img src="img/carte.jpg" width="1280" height="700" alt="La carte OpenStreetMap avec un marqueur au centre du Bénin">
+      <figcaption>La carte sur la page Nature.</figcaption>
+    </figure>
+
+    <h3>Extra 3 : une frise chronologique en CSS</h3>
+    <p>La page Patrimoine présente quelques dates clés sous forme de frise. C'est une simple liste ordonnée
+      <code>&lt;ol&gt;</code>, donc elle reste lisible par un lecteur d'écran. Le trait vertical et les points sont
+      dessinés en CSS avec <code>border-left</code> et le pseudo-élément <code>::before</code>.</p>
+    <pre>.frise {
+  margin: 0 0 2rem 0.5rem;
+  padding: 0 0 0 1.5rem;
+  border-left: 4px solid #18bfef;
+  list-style: none;
+}
+
+.frise li::before {
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  left: -2.15rem;
+  width: 1rem;
+  height: 1rem;
+  border: 3px solid #18bfef;
+  border-radius: 50%;
+  background-color: #ffffff;
+}</pre>
+    <figure>
+      <img src="img/frise.jpg" width="1280" height="560" alt="La frise chronologique des dates clés du Bénin">
+      <figcaption>La frise sur la page Patrimoine.</figcaption>
+    </figure>
+
+    <h3>Extra 4 : respect du réglage « réduire les animations »</h3>
+    <p>Le modèle fait bouger l'image de fond pendant le défilement (parallaxe) et anime le défilement du bouton
+      « Continuer ». Pour les personnes qui ont activé « réduire les animations », j'ai modifié <code>main.js</code>
+      pour couper ces effets, et ajouté une règle dans <code>benin.css</code> pour les transitions et animations.</p>
+    <pre>var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+$('.scrolly').scrolly({
+  speed: (reduceMotion ? 0 : 1000)
+});
+
+$wrapper._parallax(reduceMotion ? 0 : 0.925);</pre>
+    <pre>@media (prefers-reduced-motion: reduce) {
+  #wrapper &gt; .bg {
+    transform: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}</pre>
+
+    <h2>7. Comment tester</h2>
+    <ul>
+      <li><strong>Réactif :</strong> réduire la largeur de la fenêtre, ou F12 puis Ctrl+Maj+M.</li>
+      <li><strong>Clavier :</strong> appuyer sur Tab dès le chargement pour voir le lien d'évitement, puis parcourir
+        les miniatures de la galerie.</li>
+      <li><strong>Mouvement réduit :</strong> F12, menu ⋮, More tools, Rendering, « Emulate CSS media feature
+        prefers-reduced-motion » : le fond ne bouge plus au défilement.</li>
+    </ul>
+  </main>
+</body>
+
+</html>
